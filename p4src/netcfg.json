@@ -1,0 +1,144 @@
+{
+  "devices": {
+    "device:s1": {
+      "basic": {
+        "managementAddress": "grpc://mininet:50001?device_id=1",
+        "driver": "stratum-bmv2",
+        "pipeconf": "org.onosproject.ngsdn-tutorial",
+        "locType": "grid",
+        "gridX": 200,
+        "gridY": 600
+      },
+      "fabricDeviceConfig": {
+        "myStationMac": "00:aa:00:00:00:01",
+        "isSpine": false
+      }
+    },
+    "device:s2": {
+      "basic": {
+        "managementAddress": "grpc://mininet:50002?device_id=1",
+        "driver": "stratum-bmv2",
+        "pipeconf": "org.onosproject.ngsdn-tutorial",
+        "locType": "grid",
+        "gridX": 800,
+        "gridY": 600
+      },
+      "fabricDeviceConfig": {
+        "myStationMac": "00:aa:00:00:00:02",
+        "isSpine": false
+      }
+    },
+    "device:s3": {
+      "basic": {
+        "managementAddress": "grpc://mininet:50003?device_id=1",
+        "driver": "stratum-bmv2",
+        "pipeconf": "org.onosproject.ngsdn-tutorial",
+        "locType": "grid",
+        "gridX": 400,
+        "gridY": 400
+      },
+      "fabricDeviceConfig": {
+        "myStationMac": "00:bb:00:00:00:01",
+        "isSpine": true
+      }
+    },
+    "device:s4": {
+      "basic": {
+        "managementAddress": "grpc://mininet:50004?device_id=1",
+        "driver": "stratum-bmv2",
+        "pipeconf": "org.onosproject.ngsdn-tutorial",
+        "locType": "grid",
+        "gridX": 600,
+        "gridY": 400
+      },
+      "fabricDeviceConfig": {
+        "myStationMac": "00:bb:00:00:00:02",
+        "isSpine": true
+      }
+    }
+  },
+  "ports": {
+    "device:s1/3": {
+      "interfaces": [
+        {
+          "name": "s1-3",
+          "ips": ["2001:1:1::ff/64"]
+        }
+      ]
+    },
+    "device:s1/4": {
+      "interfaces": [
+        {
+          "name": "s1-4",
+          "ips": ["2001:1:1::ff/64"]
+        }
+      ]
+    },
+    "device:s1/5": {
+      "interfaces": [
+        {
+          "name": "s1-5",
+          "ips": ["2001:1:1::ff/64"]
+        }
+      ]
+    },
+    "device:s1/6": {
+      "interfaces": [
+        {
+          "name": "s1-6",
+          "ips": ["2001:1:2::ff/64"]
+        }
+      ]
+    },
+    "device:s2/3": {
+      "interfaces": [
+        {
+          "name": "s2-3",
+          "ips": ["2001:2:3::ff/64"]
+        }
+      ]
+    },
+    "device:s2/4": {
+      "interfaces": [
+        {
+          "name": "s2-4",
+          "ips": ["2001:2:4::ff/64"]
+        }
+      ]
+    }
+  },
+  "hosts": {
+    "00:00:00:00:00:10/None": {
+      "basic": {
+        "name": "h1",
+        "locType": "grid",
+        "gridX": 100,
+        "gridY": 700
+      }
+    },
+    "00:00:00:00:00:20/None": {
+      "basic": {
+        "name": "h2",
+        "locType": "grid",
+        "gridX": 400,
+        "gridY": 700
+      }
+    },
+    "00:00:00:00:00:30/None": {
+      "basic": {
+        "name": "h3",
+        "locType": "grid",
+        "gridX": 750,
+        "gridY": 700
+      }
+    },
+    "00:00:00:00:00:40/None": {
+      "basic": {
+        "name": "h4",
+        "locType": "grid",
+        "gridX": 850,
+        "gridY": 700
+      }
+    }
+  }
+}
